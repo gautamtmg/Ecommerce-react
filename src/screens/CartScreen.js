@@ -36,11 +36,11 @@ function CartScreen({match, location, history}) {
 
                 
                 { cartItems.length === 0 ? (
-                    // <Message variant='info'>
-                    //     Your cart is empty <Link to="/"> Go Back </Link>
-                    // </Message>
+                    <Message variant='info'>
+                        Your cart is empty <Link to="/"> Go Back </Link>
+                    </Message>
 
-                    'Your cart is empty'
+                    
                 ) : (
                     <ListGroup variant='flush'>
                         { cartItems.map(item=>(
